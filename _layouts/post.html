@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<header class="blog-index-header-main" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ page.featImg }}');">
+    <div class="overlay-dark"></div>
+    {% include nav.html %}
+    <div class="blog-index-title">
+        <h1 class="featured-blog-post-title"> {{ page.title }} </h1>
+    </div>
+    <div class="authorCard">
+        <img src="{{ site.baseurl }}{{ site.data.authors[page.author].avatar-img }}" alt="{{ site.baseurl }}{{ site.data.authors[page.author].name }} Avatar"/>
+        <small><em>by <a href="" >{{ site.data.authors[page.author].name }}</a><br> on {{page.date | date: "%B %e, %Y" }}</em></small>
+    </div>
+    <!--<a href="" class="read-featured-blog-post">Read</a><a href="#blurb" class="home-avatar" style="background-image: url('{{ site.baseurl }}/assets/img/hero-image.png');"></a>-->
+</header>
+
+<div class="blogPostContentWrapper">
+    {{ content }}
+</div>
+<hr>
+<h5 class="readMoreCTA">You might like reading these as well: / You might want to read</h5>
+<div class="blogReadMoreWrapper">
+    {% for post in site.posts limit: 3 %}
+        <div class="blogPostContainer">
+            <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a> <!-- use a low res folder here-->
+            <a href="" class="blogCategory">{{ post.categories }}</a>
+            <a href="{{ post.url }}" class="blogTitle">{{ post.title }}</a>
+            <p class="blogExcerpt">{{ post.excerpt }}</p>
+        </div>
+    {% endfor %}
+</div>
+

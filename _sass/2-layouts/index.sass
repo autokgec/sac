@@ -1,0 +1,168 @@
+//header
+
+header.header-main
+    position: relative
+    z-index: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 500px
+    background: 
+        size: cover
+        position: center center
+        repeat: no-repeat
+    .overlay-light
+        position: absolute
+        z-index: 2
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: $white
+        opacity: .9
+    .home-title
+        position: relative
+        z-index: 3
+        text-align: center
+        padding-top: 50px
+        h1 
+            font-size: 3.125em 
+            font-weight: 500
+            line-height: 1.2em
+            padding: 0 20px 5px 20px
+        h3
+            font-size: 1.25em
+            font-weight: 400
+            line-height: 1.2em
+    a.home-avatar
+        position: absolute
+        z-index: 3
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        margin-bottom: -60px
+        height: 100px
+        width: 100px
+        border-radius: 100%
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .25)
+        background-image: 
+            //image: url('../img/hero-image.png')
+            size: cover
+            position: center center
+            repeat: no-repeat
+        //for bootstrap type stuff 
+        @media screen and ( max-width: 355px)
+            height: 75px
+            width: 75px
+            margin-bottom: -43px
+//who-are-we
+.who-are-we
+    max-width: 600px
+    margin: 100px auto 100px auto //make it 160 top if avatar is there
+    padding: 0 20px 
+    h2
+        padding-bottom: 17px
+    p
+        a
+            font-weight: 600
+            color: $highlight
+            transition: all 0.15s ease-in-out
+            a:hover
+                color: $secondary
+
+//Recent Blogs
+h2.recent-blogs
+    text-align: center
+    padding-top: 100px
+.recent-blogs-content-wrapper
+    margin: 0 auto 100px auto
+    max-width: 800px
+    padding: 60px 20px 0px 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .blog-wrap
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        .blog
+            max-width: 465px
+            min-height: 100px
+            margin: 20px 0
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            .blog-img
+                background: $primary // TODO: Add image specific to that blog 
+                height: 100px
+                width: 100px
+                flex: 0 0 100px
+                border-radius: 5px
+                cursor: pointer
+                background: 
+                    size: cover
+                    position: center center
+                    repeat: no-repeat
+            .blog-img-one
+                background: 
+                    image: url('../img/hero-image.png')
+            .blog-img-two
+                background: 
+                    image: url('../img/favicon.png')
+
+
+            .blog-text
+                min-height: 83px
+                height: 100%
+                width: 100%
+                margin-left: 15px
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                padding: 5px 0
+                p
+                    line-height: 1.1875em
+    .blog-wrap-reverse
+        justify-content: flex-end
+        .blog
+            flex-direction: row-reverse
+            .blog-text
+                text-align: right
+                margin-right: 15px
+                margin-left: 0
+    @media screen and ( max-width: 465px)
+        .blog-wrap
+            .blog
+                flex-direction: column
+                min-height: 199px
+                .blog-text
+                    margin: 6px 0 0 0
+        .blog-wrap-reverse
+            .blog
+                align-items: flex-end
+                flex-direction: column
+                min-height: 100px
+                .blog-text
+                    margin: 6px 0 0 0
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+nav.nav-wrap
+    transition: all 0.3s ease-in
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 900 //maximium. As high as we can....;P cuz we dont want it to be "overpowered"
+    max-width: 1000px
+    display: flex
+    justify-content: space-between
+    margin: auto
+    padding: 40px
+    @media screen and ( max-width: 600px )
+        padding: 35px 20px 
+    //a.nav-logo
+    //   height: 80px
+    //    width: 80px
+    //    border-radius: 100%
+    //    margin-left: 150px // TODO: remove this element "margin-left" it takes away responsiveness
+    //    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .25)
+    //    background-image: 
+    //        image: url('../img/hero-image.png')
+    //        size: cover
+    //        position: center center
+    //        repeat: no-repeat
+        //for bootstrap type stuff 
+    a.nav-logo
+        //background: $primary  // TODO: Add image specific to that blog 
+        height: 80px
+        width: 80px
+        flex: 0 0 100px
+        border-radius: 100%
+        cursor: pointer
+        background: 
+            size: cover
+            position: center center
+            repeat: no-repeat
+        @media screen and ( max-width: 355px)
+            height: 75px
+            width: 75px
+            //margin-bottom: -43px
+    .blog-img-one
+        background: 
+            image: url('../img/hero-image.png')
+        
+        
+    a.nav-logo.nav-dark
+        svg
+            path
+                fill: $primary
+                
+    ul.navigation 
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        @media screen and ( max-width: 600px )
+            display: none
+        li
+            display: block 
+            padding-right: 30px
+            a 
+                color: $white
+                transition: all 0.15s ease-in
+                font-size: 1em
+            a:hover 
+                color: darken($white, 35% )
+        li:last-of-type
+            padding-right: 0
+    ul.navigation.nav-dark
+        li
+            a
+                color: $primary
+            a:hover
+                color: darken($white, 35%)
+//toggle sass
+
+.nav-toggle-open-wrapper, .nav-toggle-close-wrapper
+    position: relative
+    height: 100px
+    width: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    overflow: visible
+    //svg
+    background-image: 
+        width: 24px
+        height: auto  
+.nav-toggle-open-wrapper
+    z-index: 1000
+    background: 
+        image: url('../img/favicon.png')
+        size: contain
+        position: center center
+        repeat: no-repeat
+    
+    //svg
+        //stroke: $white
+.nav-toggle-open-wrapper.nav-dark
+    //svg stroke: $primary
+    background-image: url('../img/favicon.png')
+
+.nav-toggle-close-wrapper
+    //svg stroke: $primary
+    background-image: url('../img/favicon.png')
+
+//hamburger icon sass
+// .nav-toogle-open-wrapper.nav-dark
+//     cursor: pointer
+//     display: inline-block
+//     span
+//         width: 30px
+//         background-color: #000
+//         height: 5px
+//         display: block
+//         margin-bottom: 6px 
+//     span:last-child 
+//         margin-bottom: 0
+//     @media screen and ( min-width: 600 )
+//         .nav-toogle-open-wrapper.nav-dark
+//                 display: none
+        
+
+.toggled-nav-wrapper
+    transition: all 0.2s ease-in-out
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    position: fixed  //if we want to stick our nav which is a good practice though
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 1003
+    width: 300px
+    height: 100%
+    padding: 35px 20px 35px 0
+    background: $white
+    transform: translateX(300px)
+    .internal-nav-links-wrapper, .external-nav-links-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        text-align: right
+    hr
+        width: 100%
+        margin: 30px 0 60px 0
+    .internal-nav-links-wrapper
+        margin-top: 50px
+        height: 320px
+        a.internal-link-wrapper
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
+    .external-nav-links-wrapper
+        height: 122px
+        a.external-link-wrapper
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
+.external-link-icon, .internal-link-icon
+    height: 30px
+    width: 30px
+    margin-left: 20px
+    background: 
+        size: contain
+        position: center center
+        repeat: no-repeat
+// TODO: need svgs here
+.internal-link-icon-home
+    background-image: url('../img/favicon.png')
+.internal-link-icon-gallery
+    background-image: url('../img/favicon.png')
+.internal-link-icon-blog
+    background-image: url('../img/favicon.png')
+.internal-link-icon-team
+    background-image: url('../img/favicon.png')
+.internal-link-icon-about-us
+    background-image: url('../img/favicon.png')
+
+
+.external-link-icon-facebook
+    background-image: url('../img/hero-image.png')
+.external-link-icon-twitter
+    background-image: url('../img/icons/twitter.svg')
+.external-link-icon-instagram
+    background-image: url('../img/icons/instagram.svg')
+
+
+.nav-toggle-body-overlay
+    transition: opacity 0.2s ease-in-out, transform 0s ease-in-out 0.2s 
+    display: block
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1000
+    width: 100%
+    height: 100%
+    background: rgba(0,0 ,0 ,0.7)
+    opacity: 0
+    transform: translateX(100%)
+html.nav-open
+    body
+        overflow: hidden
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+    .nav-toggle-body-overlay
+        transition: opacity 0.2s ease-in-out, transform 0s
+        opacity: 1
+        transform: translateX(0)
+    .toggled-nav-wrapper
+        transform: translateX(0)
+@media screen and ( min-width: 600px )
+    .nav-toggle-open-wrapper, .nav-toggle-close-wrapper, .toggled-nav-wrapper, .nav-toggle-body-overlay
+        display: none
+    
+
+
+            

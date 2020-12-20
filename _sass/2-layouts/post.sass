@@ -1,0 +1,92 @@
+.authorCard
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    display: flex
+    z-index: 5
+    flex-direction: column
+    align-items: center
+    margin-bottom: 30px
+    img
+        height: 50px
+        width: 50px
+        border-radius: 100%
+        margin: 10px
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .25)
+    small
+        text-transform: none
+        text-align: center
+        line-height: 1.5em
+        color: darken($white, 10%)
+        font-family: $font-stack-two
+        a
+            font-weight: 500
+            color: $white
+
+//Blog Post Styles
+
+.blogPostContentWrapper
+    width: 100%
+    max-width: 800px
+    margin: auto
+    padding: 100px 20px 0 20px
+    img
+        display: block
+        width: 100%
+        height: auto
+        margin: 2em auto    //we use auto on left-right becoz if img is small than 800 than its center itself
+        overflow: hidden
+        border-radius: 5px
+    p, ul, ol
+        font-family: $font-stack-two
+        font-weight: 300
+        color: $primary
+        line-height: 2em
+        padding: 2em 0
+    .dropCap::first-letter
+        font-size: 3.5em
+        font-weight: 400
+        font-family: $font-stack
+        color: $highlight
+    a
+        color: $highlight
+        font-weight: 600
+        cursor: pointer
+        &:hover
+            color: $secondary
+    a.lg-blockquote
+        font-family: $font-stack
+        font-size: 2em
+        font-weight: 200
+        color: $highlight
+        line-height: 1.5em
+        display: block
+        text-align: center
+        margin: 1em auto
+        max-width: 500px
+        transition: all 0.3s ease-in-out
+        &:hover
+            color: $secondary
+h5.readMoreCTA
+    text-align: center
+    font-size: 1.2em
+    font-weight: 500
+    font-family: $font-stack
+    padding: 2em 0
+    margin-top: 60px
+    text-transform: uppercase
+
+//you migt want to read these
+.blogReadMoreWrapper
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto 0 auto
+    padding: 0 20px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: baseline
+    flex-wrap: wrap
+    @media screen and ( max-width: 700px )
+        padding: 0
