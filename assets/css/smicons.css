@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-icons-wrapper {
+  position: fixed;
+  top: 75%;
+  left: 23px;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+}
+
+ul.smicons {
+  list-style: none;
+}
+
+ul.smicons li {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  background: #e59500;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+ul.smicons li .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+ul.smicons li.facebook{
+  background: #3b5998;
+}
+
+ul.smicons li.twitter{
+  background: #00aced;
+}
+
+ul.smicons li.instagram{
+  background: #bc2a8d;
+}
+
+ul.smicons li.youtube{
+  background: #e72c13;
+}
+
+ul.smicons li.whatsapp{
+  background: #4dc247;
+}
+
+ul.smicons li.facebook div.smi-slider{
+  background: #627aac;
+}
+
+ul.smicons li.twitter div.smi-slider{
+  background: #7fd5f6;
+}
+
+ul.smicons li.instagram div.smi-slider{
+  background: #dd94c6;
+}
+
+ul.smicons li.youtube div.smi-slider{
+  background: #e6887b;
+}
+
+ul.smicons li.whatsapp div.smi-slider{
+  background: #82d47e;
+}
+
+.smi-slider {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 51px;
+  width: 0px;
+  height: 46px;
+  background: #eebb5c;
+  border-radius: 3px;
+  transition: all 0.5s 0.3s ease;
+}
+
+.smi-slider p {
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 46px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+ul.smicons li:hover .smi-slider {
+  width: 180px;
+  transition: all 0.5s ease;
+}
+
+ul.smicons li:hover .smi-slider p {
+  opacity: 1;
+  transition: all 1s 0.2s ease;
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 600px) {
+  ul.smicons li {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-media-icons-wrapper {
+    top: 80%;
+    left: 15px;
+  }
+  .smi-slider {
+    height: 30px;
+    left: 35px;
+  }
+  
+  .smi-slider p {
+    line-height: 30px;
+  }
+
+  .smi-slider p {
+    font-size: 12px;
+  }
+}

@@ -3,25 +3,24 @@
     <!--<a href="{{ site.baseurl }}/" class="nav-logo {% if page.url =='/' %}nav-dark{%endif%}"> </a>-->
         <!-- TODO: Either add a svg or ill add directly a logo-->
         <!--<a style="background-image: url('{{ site.baseurl }}/assets/img/hero-image.png');"></a>-->
-    <a href="{{ site.baseurl }}/" class="nav-logo" style="background-image: url('{{ site.baseurl }}/assets/img/favicon.png');"></a>
+    <a href="{{ site.baseurl }}/" class="nav-logo1" style="background-image: url('{{ site.baseurl }}/assets/img/favicon.png');"></a>
     <!--<a href="{{ site.baseurl }}/" class="nav-logo"></a>-->
     <ul class="navigation {% if page.url =='/' %}nav-dark{%endif%}">
         <li><a href="{{site.baseurl }}/">Home</a></li>
-        <li><a href="{{site.baseurl }}/gallery">Gallery</a></li>
-        <li><a href="{{site.baseurl }}/blog">Blog</a></li>
+        <li><a href="{{site.baseurl }}/case-studies">Gallery</a></li>
+        <li><a href="{{site.baseurl }}/blog">Blogs</a></li>
         <li><a href="{{site.baseurl }}/team">Team</a></li>
         <li><a href="{{site.baseurl }}/about-us">About Us</a></li>
         
     </ul>
+    <a href="https://www.kgec.edu.in/" class="nav-logo2" style="background-image: url('{{ site.baseurl }}/assets/img/icons/kgec-logo.png');"></a>
     <div class="nav-toogle-open-wrapper {% if page.url== '/' %}nav-dark{% endif %}">
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
+        <span style="font-size:30px; cursor:pointer; padding-right: 20px" onclick="openNav()" color="white">&#9776;</span>
+        <!-- a svg with burger shape -->
     </div>
-    <div class="nav-toggle-body-overlay"></div>
-    <div class="toggled-nav-wrapper">
+    <div class="toggled-nav-wrapper" id="mySidenav">
         <div class="nav-toggle-close-wrapper">
-            <!-- svg of closing icon X -->
+            <img src="{{ site.baseurl }}/assets/img/red_cross.png" width="20px" alignment="left" onclick="closeNav()">
         </div>
         <div class="internal-nav-links-wrapper">
             <a href="{{ site.baseurl }}/" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Home</h5><small>Who are we?</small></div><div class="internal-link-icon internal-link-icon-home"></div></a>
@@ -29,14 +28,9 @@
             <a href="{{ site.baseurl }}/blog" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Blogs</h5><small>What we think & write?</small></div><div class="internal-link-icon internal-link-icon-blogs"></div></a>
             <a href="{{ site.baseurl }}/team" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Team</h5><small>Meet some enthusiastic minds</small></div><div class="internal-link-icon internal-link-icon-team"></div></a>
             <a href="{{ site.baseurl }}/about-us" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>About Us</h5><small>What we do?</small></div><div class="internal-link-icon internal-link-icon-about-us"></div></a>
-
         </div>
+        <br><br><br>
         <hr>
-        <div class="external-nav-links-wrapper">
-            <a href="{{ site.facebook_path }}" target="_blank" class="external-link-wrapper"><h6>Facebook</h6><div class="external-link-icon external-link-icon-facebook"></div></a>
-            <a href="{{ site.twitter_path }}" target="_blank" class="external-link-wrapper"><h6>Twitter</h6><div class="external-link-icon external-link-icon-twitter"></div></a>
-            <a href="{{ site.instagram_path }}" target="_blank" class="external-link-wrapper"><h6>Instagram</h6><div class="external-link-icon external-link-icon-instagram"></div></a>
-        </div>
     </div>
 
 </nav>

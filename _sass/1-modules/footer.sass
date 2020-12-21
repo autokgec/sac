@@ -1,13 +1,10 @@
-footer.footer-wrapper
-    width: 100%
-    padding: 100px 20px 0 20px
-    display: flex
-    flex-direction: column
-    align-items: center
+footer.mainfooter
+    padding-top: 40px
     .newsletter-slug
         margin: auto
         max-width: 285px
         text-align: center
+        
         h2
             padding-bottom: 5px
         p
@@ -60,34 +57,7 @@ footer.footer-wrapper
                     width: 100%
                 @media screen and ( max-width: 370px)
                     border-radius: 0 0 3px 3px
-    .footer-social-links
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        height: 50px
-        width: 100%
-        max-width: 250px
-        margin: 0 0 25px 0
-        .social-icon-wrap
-            transition: all 0.2s ease-in
-            display: inline-block
-            height: 50px
-            width: 50px
-            border-radius: 100%
-            overflow: hidden
-            background: $primary
-                size: contain   //we can use percentage as well 
-                position: center center
-                repeat: no-repeat
-            &:hover
-                transform: scale(.95)
-        // TODO: add these social icons
-        .footer-facebook-wrapper
-            background-image: url('../img/favicon.png')
-        .footer-twitter-wrapper
-            background-image: url('../img/favicon.png')
-        .footer-instagram-wrapper
-            background-image: url('../img/favicon.png')
+    
             
     .footer-email
         transition: all 0.2s ease-in

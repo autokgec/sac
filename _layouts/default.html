@@ -4,6 +4,9 @@
         {% include head.html %}
     </head>
     <body>
+
+        {% include nav.html %}
+
         {{ content }}
         
         <hr/> <!--no need to use self closing tag-->
@@ -11,5 +14,8 @@
         {% include footer.html %}
 
         {% include js-link.html %}
+
+        {% include smicons.html %}
+        
     </body>
 </html>

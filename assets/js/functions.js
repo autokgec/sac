@@ -1,9 +1,9 @@
-$('.toggled-nav-wrapper').on('click', function(e){
-    e.stopPropagation();
-});
-$('.nav-toggle-open-wrapper').on('click', function(){
-    $('html').toggleClass('nav-open');
-});
-$('.nav-toggle-open-wrapper, .nav-toggle-close-wrapper, header .nav-toggle-body-overlay').on('click', function(){
-    $('html').toggleClass('nav-open');
-});
+function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}

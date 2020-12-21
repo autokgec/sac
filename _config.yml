@@ -20,11 +20,11 @@
 
 # TODO: Change all these infos later on.
 title: Students Automobile Club
-email: sac-kgec@gmail.com
+email: kgec.sac@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   SAC-KGEC is a automobile club of KGEC.
 baseurl: "/sac" # the subpath of your site, e.g. /blog
-url: "http://sackgec.ml/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://autokgec.github.io/sac" # the base hostname & protocol for your site, e.g. http://example.com
 
 #we wont be needing them
 #twitter_username: jekyllrb
@@ -35,11 +35,12 @@ url: "http://sackgec.ml/" # the base hostname & protocol for your site, e.g. htt
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-twitter_path: https://twitter.com/sac-kegc
-instagram_path: https://instagram.com/sac-kegc
-facebook_path: https://facebook.com/sac-kegc
-github_path: https://github.com/sac-kegc
-youtube_path: https://youtube.com/sac-kegc
+twitter_path: https://twitter.com/sac-kgec
+instagram_path: https://instagram.com/sac-kgec
+facebook_path: https://www.facebook.com/kgecSAC
+github_path: https://github.com/sac-kgec
+youtube_path: https://youtube.com/sac-kgec
+whatsapp_path: baseurl
 
 pathToBlogImgBin: /assets/img/blog/blogs/
 

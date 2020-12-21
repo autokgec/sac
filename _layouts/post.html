@@ -23,9 +23,9 @@ layout: default
 <div class="blogReadMoreWrapper">
     {% for post in site.posts limit: 3 %}
         <div class="blogPostContainer">
-            <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a> <!-- use a low res folder here-->
+            <a href="/sac{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a> <!-- use a low res folder here-->
             <a href="" class="blogCategory">{{ post.categories }}</a>
-            <a href="{{ post.url }}" class="blogTitle">{{ post.title }}</a>
+            <a href="/sac{{ post.url }}" class="blogTitle">{{ post.title }}</a>
             <p class="blogExcerpt">{{ post.excerpt }}</p>
         </div>
     {% endfor %}

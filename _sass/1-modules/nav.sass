@@ -1,17 +1,22 @@
 nav.nav-wrap
     transition: all 0.3s ease-in
-    position: absolute
+    position: fixed
+    border: 2px solid grey
     top: 0
     left: 0
+    background-color: black
     right: 0
-    z-index: 900 //maximium. As high as we can....;P cuz we dont want it to be "overpowered"
-    max-width: 1000px
+    width: 100%
+    height: 110px
+    z-index: 10000 //maximium. As high as we can....;P cuz we dont want it to be "overpowered"
     display: flex
     justify-content: space-between
     margin: auto
-    padding: 40px
+    padding: 5px
     @media screen and ( max-width: 600px )
-        padding: 35px 20px 
+        padding: 5px
+        height: 60px
+
     //a.nav-logo
     //   height: 80px
     //    width: 80px
@@ -24,24 +29,39 @@ nav.nav-wrap
     //        position: center center
     //        repeat: no-repeat
         //for bootstrap type stuff 
-    a.nav-logo
+    a.nav-logo1, a.nav-logo2
         //background: $primary  // TODO: Add image specific to that blog 
-        height: 80px
+        height: 100px
         width: 80px
         flex: 0 0 100px
-        border-radius: 100%
+        margin-left: 15px
+        margin-right: 15px
         cursor: pointer
         background: 
             size: cover
             position: center center
             repeat: no-repeat
-        @media screen and ( max-width: 355px)
-            height: 75px
-            width: 75px
+        @media screen and ( max-width: 800px)
+            margin-left: 2.5px
+            margin-right: 2.5px
+            height: 45px
+            width: 45px
+            background-size: 47px 47px
             //margin-bottom: -43px
-    .blog-img-one
-        background: 
-            image: url('../img/hero-image.png')
+    a.nav-logo1
+        @media screen and ( max-width: 800px)
+            padding-top: 6px
+            background-size: 70px 70px
+    a.nav-logo2
+        margin-left: -40px
+        background-size: 80px 80px
+        postion: fixed
+        @media screen and ( max-width: 800px)
+            background-size: 48px 48px
+            
+    //.blog-img-one
+    //    background: 
+    //        image: url('../img/hero-image.png')
         
         
     a.nav-logo.nav-dark
@@ -54,28 +74,38 @@ nav.nav-wrap
         flex-direction: row
         justify-content: center
         align-items: center
+        text-decoration: none
         @media screen and ( max-width: 600px )
             display: none
         li
             display: block 
-            padding-right: 30px
+            padding-right: 70px
             a 
-                color: $white
-                transition: all 0.15s ease-in
-                font-size: 1em
+                color: white
+                transition: all 0.5s ease-in
+                font-size: 25px
+                display: block
+                padding-top: 10px
             a:hover 
-                color: darken($white, 35% )
+                color: orange
         li:last-of-type
-            padding-right: 0
+            padding-right: 40px
     ul.navigation.nav-dark
         li
             a
-                color: $primary
+                color: white
             a:hover
-                color: darken($white, 35%)
+                color: orange
+                text-decoration: none
 //toggle sass
 
-.nav-toggle-open-wrapper, .nav-toggle-close-wrapper
+.nav-toogle-open-wrapper
+    display: none
+    @media screen and ( max-width: 600px )
+        display: flex
+        color: white
+
+.nav-toggle-close-wrapper
     position: relative
     height: 100px
     width: 50px
@@ -84,60 +114,20 @@ nav.nav-wrap
     align-items: center
     cursor: pointer
     overflow: visible
-    //svg
-    background-image: 
-        width: 24px
-        height: auto  
-.nav-toggle-open-wrapper
-    z-index: 1000
-    background: 
-        image: url('../img/favicon.png')
-        size: contain
-        position: center center
-        repeat: no-repeat
-    
-    //svg
-        //stroke: $white
-.nav-toggle-open-wrapper.nav-dark
-    //svg stroke: $primary
-    background-image: url('../img/favicon.png')
-
-.nav-toggle-close-wrapper
-    //svg stroke: $primary
-    background-image: url('../img/favicon.png')
-
-//hamburger icon sass
-// .nav-toogle-open-wrapper.nav-dark
-//     cursor: pointer
-//     display: inline-block
-//     span
-//         width: 30px
-//         background-color: #000
-//         height: 5px
-//         display: block
-//         margin-bottom: 6px 
-//     span:last-child 
-//         margin-bottom: 0
-//     @media screen and ( min-width: 600 )
-//         .nav-toogle-open-wrapper.nav-dark
-//                 display: none
-        
 
 .toggled-nav-wrapper
-    transition: all 0.2s ease-in-out
-    display: flex
-    align-items: flex-end
-    flex-direction: column
-    position: fixed  //if we want to stick our nav which is a good practice though
+    height: 100%
+    width: 0
+    position: fixed
+    z-index: 1
     top: 0
     right: 0
-    bottom: 0
-    z-index: 1003
-    width: 300px
-    height: 100%
-    padding: 35px 20px 35px 0
-    background: $white
-    transform: translateX(300px)
+    background-color: white
+    overflow-x: hidden
+    transition: 0.5s
+    padding-top: 30px
+    a
+        text-decoration: none
     .internal-nav-links-wrapper, .external-nav-links-wrapper
         display: flex
         flex-direction: column
@@ -148,15 +138,16 @@ nav.nav-wrap
         margin: 30px 0 60px 0
     .internal-nav-links-wrapper
         margin-top: 50px
-        height: 320px
+        height: 192px
         a.internal-link-wrapper
             display: flex
             flex-direction: row
             justify-content: flex-end
             align-items: center
+            text-decoration: none
     .external-nav-links-wrapper
         height: 122px
-        a.external-link-wrapper
+        a.external-nav-links-wrapper
             display: flex
             flex-direction: row
             justify-content: flex-end
@@ -169,59 +160,19 @@ nav.nav-wrap
         size: contain
         position: center center
         repeat: no-repeat
-// TODO: need svgs here
+
 .internal-link-icon-home
-    background-image: url('../img/favicon.png')
+    background-image: url('../img/icons/home.png')
 .internal-link-icon-gallery
-    background-image: url('../img/favicon.png')
-.internal-link-icon-blog
-    background-image: url('../img/favicon.png')
+    background-image: url('../img/icons/gallery.png')
+.internal-link-icon-blogs
+    background-image: url('../img/icons/blogs.png')
 .internal-link-icon-team
-    background-image: url('../img/favicon.png')
+    background-image: url('../img/icons/team.png')
 .internal-link-icon-about-us
-    background-image: url('../img/favicon.png')
+    background-image: url('../img/icons/about.png')
 
-
-.external-link-icon-facebook
-    background-image: url('../img/hero-image.png')
-.external-link-icon-twitter
-    background-image: url('../img/icons/twitter.svg')
-.external-link-icon-instagram
-    background-image: url('../img/icons/instagram.svg')
-
-
-.nav-toggle-body-overlay
-    transition: opacity 0.2s ease-in-out, transform 0s ease-in-out 0.2s 
-    display: block
-    position: fixed
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    z-index: 1000
-    width: 100%
-    height: 100%
-    background: rgba(0,0 ,0 ,0.7)
-    opacity: 0
-    transform: translateX(100%)
-html.nav-open
-    body
-        overflow: hidden
-        position: fixed
-        top: 0
-        right: 0
-        bottom: 0
-        left: 0
-    .nav-toggle-body-overlay
-        transition: opacity 0.2s ease-in-out, transform 0s
-        opacity: 1
-        transform: translateX(0)
-    .toggled-nav-wrapper
-        transform: translateX(0)
 @media screen and ( min-width: 600px )
     .nav-toggle-open-wrapper, .nav-toggle-close-wrapper, .toggled-nav-wrapper, .nav-toggle-body-overlay
         display: none
     
-
-
-            
