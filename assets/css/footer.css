@@ -7,27 +7,40 @@ footer {
     background: linear-gradient(59deg, #3A6073, #16222A);
     color: white;
     margin-top:20px;
-  }
-  
-  footer a {
-    color: #fff;
-    font-size: 16px;
-    transition-duration: 0.2s;
-  }
-  
-  footer a:hover {
-    color: #FA944B;
-    text-decoration: none;
-  }
-  
-  .copy {
-    font-size: 12px;
-    padding: 10px;
-    border-top: 1px solid #FFFFFF;
-  }
-  
-  .footer-middle {
-    padding-top: 2em;
-    color: white;
-  }
-  
+}
+
+footer a {
+  color: #fff;
+  font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+.move-up{
+  position: absolute;
+  right: 6%;
+}
+
+.move-up span{
+  color: var(--midnight);
+}
+
+.move-up span:hover{
+  color: var(--white);
+  cursor: pointer;
+}
