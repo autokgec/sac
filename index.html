@@ -4,22 +4,105 @@
 
 layout: default
 ---
+<!------------------------ Carousel -------------------------->
 
-<header class="header-main" style="background-image: url('{{ site.baseurl }}/assets/img/favicon.png');">
-    <div class="overlay-light"></div>
-    <div class="home-title">
-        <h1> {{ site.title }} </h1>
-        <h3>Design - Build - Test</h3>
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('assets/img/f1.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="home-title" style="color: white; text-shadow: 0 0 15px #000000;">
+              <br><br><br><br><br><br><br><br><br><br><br><br>
+              <h1>
+                <strong>{{ site.title }}</strong>
+              </h1>
+              <h3>Design - Build - Test</h3>
+            </div>
+            <!-- Content -->
+          </div>
+          <!-- Mask & flexbox options-->
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('assets/img/ferrari.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-grey-light d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="home-title text-center" style="color: white; text-shadow: 0 0 15px #000000;">
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1>
+                  <strong>{{ site.title }}</strong>
+                </h1>
+                <h3>Design - Build - Test</h3>
+              </div>
+            <!-- Content -->
+          </div>
+          <!-- Mask & flexbox options-->
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('assets/img/lots of cars.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="home-title text-right" style="color: white; text-shadow: 0 0 15px #000000;">
+              <br><br><br><br><br><br><br><br><br><br><br><br>
+              <h1>
+                <strong>{{ site.title }}</strong>
+              </h1>
+              <h3>Design - Build - Test</h3>
+            </div>
+            <!-- Content -->
+          </div>
+          <!-- Mask & flexbox options-->
+        </div>
+      </div>
+      <!--/Third slide-->
+
     </div>
-    <!--<a href="#blurb" class="home-avatar" style="background-image: url('{{ site.baseurl }}/assets/img/hero-image.png');"></a>-->
-</header>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+
+<!----------------------- Carousel Ends -------------------------->
+
 <!-- About-->
 <div class="who-are-we" id="blurb">
     <h2 style="text-align: center">Who are we?</h2>
     <p> The Students' Automobile Club-KGEC,the official automobile club of KGEC is established to bridge the gap between the techincal knowledge and skills in the automobile fields among the engineering students.</a>
     </p>
 </div>
-<hr>
 <!-- Recent Blogs -->
 <h2 class="recent-blogs"> Recent Blogs </h2>
 <div class="recent-blogs-content-wrapper">
