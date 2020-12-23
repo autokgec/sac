@@ -44,3 +44,16 @@ footer a:hover {
   color: var(--white);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .ending{
+    font-size: 12px;
+  }
+  .move-up{
+    padding-top: 190px;
+  }
+  .newsl{
+    font-size: 14px;
+  }
+
+}
