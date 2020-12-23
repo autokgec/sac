@@ -1,6 +1,28 @@
 .carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body{
-    height:100%
+    height:100%;
+    background-position: center;
 }
 html{
-    height:80%
+    height:80%;
+}
+.carousel-title{
+    padding-top: 280px;
+}
+
+@media only screen and (max-width: 600px) {
+    html{
+        height:40%;
+    }
+    .view{
+        width:auto;
+    }
+    .carousel-title{
+        padding-top: 190px;
+    }
+    .carousel-title h1{
+        font-size: 22px;
+    }
+    .carousel-title h3{
+        font-size: 16px;
+    }
 }
