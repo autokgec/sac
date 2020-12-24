@@ -47,6 +47,8 @@ footer a:hover {
 
 div.ending p{
   font-size: 17px;
+  text-align: center;
+  color: whitesmoke;
 }
 
 div.ending{
@@ -68,14 +70,14 @@ div.ending{
   div.row li{
     font-size: 13px;
     text-decoration: none;
+    text-emphasis: none;
   }
   div.row p{
     font-size: 13px;
-
+    text-emphasis: none;
   }
   div.row a{
     font-size: 13px;
-
   }
   div.row{
     padding-bottom: 0;
@@ -87,6 +89,6 @@ div.ending{
     color: whitesmoke;
   }
   div.ending{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
