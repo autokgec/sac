@@ -21,7 +21,7 @@ html{
 
 @media only screen and (max-width: 600px) {
     html{
-        height:40%;
+        height:45%;
     }
     .view{
         width:auto;
@@ -38,8 +38,8 @@ html{
 
 
     .youtube-player{
-        height: 160px;
-        width: 320px;
+        height: 165px;
+        width: 330px;
     }
 
 }
