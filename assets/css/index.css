@@ -9,6 +9,16 @@ html{
     padding-top: 280px;
 }
 
+.youtube-player-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.youtube-player{
+    height: 400px;
+    width: 800px;
+}
+
 @media only screen and (max-width: 600px) {
     html{
         height:40%;
@@ -25,4 +35,11 @@ html{
     .carousel-title h3{
         font-size: 16px;
     }
+
+
+    .youtube-player{
+        height: 160px;
+        width: 320px;
+    }
+
 }
