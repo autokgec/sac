@@ -45,15 +45,48 @@ footer a:hover {
   cursor: pointer;
 }
 
+div.ending p{
+  font-size: 17px;
+}
+
+div.ending{
+  padding-bottom: 15px;
+  padding-top: -10px;
+}
+
 @media only screen and (max-width: 600px) {
-  .ending{
-    font-size: 12px;
-  }
   .move-up{
     padding-top: 190px;
   }
   .newsl{
     font-size: 14px;
   }
+  div.row h3{
+    font-size: 17px;
 
+  }
+  div.row li{
+    font-size: 13px;
+    text-decoration: none;
+  }
+  div.row p{
+    font-size: 13px;
+
+  }
+  div.row a{
+    font-size: 13px;
+
+  }
+  div.row{
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  div.ending p{
+    font-size: 13px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  div.ending{
+    padding-bottom: 10px;
+  }
 }
