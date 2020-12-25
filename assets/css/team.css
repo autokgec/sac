@@ -1,0 +1,170 @@
+/*              Row 1 (Convener)             */
+
+/* .box4{
+    text-align:center
+}
+.box4:before{
+    content:""
+}
+.box4{
+    overflow:hidden
+}
+.box4 .title{
+    letter-spacing:1px
+}
+.box4 .post{
+    font-style:italic
+}
+body{
+    background-color:#f1f1f2
+}
+.box4 .icon li a:hover{
+    border-radius:50%
+}
+.box4 .title{
+    text-transform:uppercase
+}
+.box4{
+    box-shadow:0 0 3px rgba(0,0,0,.3)
+}
+.box4{
+    position:relative
+}
+.box4:before{
+    width:0;
+    height:200%;
+    background:rgba(0,0,0,.5);
+    position:absolute;
+    top:0; left:-250px; bottom:0;
+    transform:skewX(-36deg);
+    transition:all .5s ease 0s
+}
+.box4:hover:before{
+    width:200%
+}
+.box4 img{
+    width:100%;
+    height:auto
+}
+.box4 .box-content{
+    width:100%;
+    height:100%;
+    padding-top:20%;
+    position:absolute;
+    top:0;left:0;
+    transform:scale(0);transition:all .3s ease 0s
+}
+.box4 .icon{
+    list-style:none;
+    padding:0
+}
+.box4:hover .box-content{
+    transform:scale(1)
+}
+.box4 .title{
+    font-size:22px;
+    font-weight:700;
+    color:#fff;
+    margin:0 0 10px
+}
+.box4 .post{
+    display:block;
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    margin-bottom:20px
+}
+.box4 .icon{
+    margin:0
+}
+.box4 .icon li{
+    display:inline-block
+}
+.box4 .icon li a{
+    display:block;
+    width:35px;
+    height:35px;
+    line-height:35px;
+    font-size:20px;
+    background:#fff;
+    color:#ee4266;
+    margin-right:10px;
+    transition:all .3s ease 0s
+}
+.box5 .icon li{
+    display:inline-block
+}
+@media only screen and (max-width:990px){
+    .box4{
+        margin-bottom:30px
+    }
+}
+@media only screen and (max-width:767px){
+    .box4:before{
+        left:-400px
+    }
+.box4:hover:before{
+    width:300%
+}
+} */
+
+/*                  Box 1                 */
+
+.box1{text-align:center}
+.box1:before{content:""}
+.box1{overflow:hidden}
+.box1 .title{letter-spacing:1px}
+.box1 .post{font-style:italic}
+body{background-color:#f1f1f2}
+.mt-30{margin-top:30px}
+.mt-40{margin-top:40px}
+.mb-30{margin-bottom:30px}
+.box1 .icon li a:hover{border-radius:50%}
+.box1 .title{text-transform:uppercase}
+
+
+.box1{box-shadow:0 0 3px rgba(0,0,0,.3)}
+.box1{position:relative}
+.box1:before{width:0;height:200%;background:rgba(0,0,0,.5);position:absolute;top:0;left:-250px;bottom:0;transform:skewX(-36deg);transition:all .5s ease 0s}
+.box1:hover:before{width:200%}
+.box1 img{width:100%}
+.box1 .box-content{width:100%;height:100%;padding-top:20%;position:absolute;top:0;left:0;transform:scale(0);transition:all .3s ease 0s}
+.box1 .icon{list-style:none;padding:0}
+.box1:hover .box-content{transform:scale(1)}
+.box1 .title{font-size:22px;font-weight:700;color:#fff;margin:0 0 10px}
+.box1 .post{display:block;font-size:15px;font-weight:600;color:#fff;margin-bottom:20px}
+.box1 .icon{margin:0}
+.box1 .icon li{display:inline-block}
+.box1 .icon li a{display:block;width:35px;height:35px;line-height:35px;font-size:20px;background:#fff;color:#ee4266;margin-right:10px;transition:all .3s ease 0s}
+@media only screen and (max-width:990px){.box1{margin-bottom:30px}
+}
+@media only screen and (max-width:767px){.box1:before{left:-400px}
+.box1:hover:before{width:300%}
+}
+
+/*              Box 1 Ends            */
+
+/*                Box 2               */
+
+.box2{background:#000;position:relative}
+.box2:after{background:rgba(0,0,0,.7);position:absolute;top:0;left:-30%;bottom:0;right:70%;transform:skew(20deg) translateX(-75%)}
+.box2:hover:after{transform:skew(20deg) translateX(0)}
+.box2 img{width:100%;height:auto}
+.box2:hover img{opacity:.5}
+.box2 .box-content{padding:20px;text-align:right;position:absolute;top:0;right:0;z-index:1}
+.box2 .icon,.box7 .icon{padding:0;list-style:none}
+.box2 .icon li a{text-align:center}
+.box2 .title{font-size:20px;font-weight:900;color:#fff;margin:0 0 10px;transform:scale(0)}
+.box2:hover .title{transform:scale(1)}
+.box2 .icon li,.box2 .post{opacity:0;transform:translateX(40px);transition:all .35s ease 0s}
+.box2 .post{display:block;font-size:14px;color:#fff;margin-bottom:5px}
+.box2 .icon{display:inline-block;margin:0}
+.box2:hover .icon li,.box2:hover .post{opacity:1;transform:translateX(0)}
+.box2:hover .icon li:first-child{transition-delay:.1s}
+.box2:hover .icon li:nth-child(2){transition-delay:.2s}
+.box2 .icon li a{display:block;width:35px;height:35px;line-height:35px;background:#fff;font-size:18px;color:#605f5f;margin-bottom:5px;transition:all .35s ease}
+.box2 .icon li a:hover{background:#605f5f;color:#fff}
+@media only screen and (max-width:990px){.box2{margin-bottom:30px}
+}
+
+/*              Box 2 Ends            */

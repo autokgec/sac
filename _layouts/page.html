@@ -23,7 +23,7 @@ layout: default
             <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a> <!-- use a low res folder here-->
             <a href="" class="blogCategory">{{ post.categories }}</a>
             <a href="{{ post.url }}" class="blogTitle">{{ post.title }}</a>
-            <p class="blogExcerpt">{{ post.excerpt }}</p>
+            <p class="blogExcerpt" style="color: black">{{ post.excerpt }}</p>
         </div>
     {% endfor %}
 </div>
