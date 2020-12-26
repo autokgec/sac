@@ -9,6 +9,67 @@ html{
     padding-top: 280px;
 }
 
+/******************* Notice Box ********************/
+
+.notice-wrapper{
+    border: 2px solid #222;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.notice-container{
+    display: flex;
+    justify-content: center;
+}
+
+.notice-container ul,.notice-container li {
+    padding: 3px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.notice-container li {
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.data-list {
+    height: 300px;
+    width: 700px;
+    padding: 2rem;
+    overflow-y: hidden;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .notice-container li {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .notice-wrapper h3{
+        font-size: 20px;
+    }
+
+    .notice-wrapper{
+        margin-left:8%;
+        margin-right:8%;
+    }
+
+    .data-list {
+        height: 200px;
+    }
+}
+
+/*************** Notice Box Ends ********************/
+
 .youtube-player-wrapper{
     display: flex;
     justify-content: center;
@@ -18,6 +79,8 @@ html{
     height: 400px;
     width: 800px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     html{
