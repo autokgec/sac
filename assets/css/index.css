@@ -15,6 +15,7 @@ html{
     border: 2px solid #222;
     margin-left:20%;
     margin-right:20%;
+    border-radius: 7px;
 }
 
 .notice-container{
