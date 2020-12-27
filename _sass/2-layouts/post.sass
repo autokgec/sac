@@ -27,28 +27,32 @@
 //Blog Post Styles
 
 .blogPostContentWrapper
-    width: 100%
+    width: 95%
     max-width: 1100px
     margin: auto
     padding: 100px 20px 0 20px
     img
         display: block
-        width: 100%
+        width: 95%
         height: auto
         margin: 2em auto    //we use auto on left-right becoz if img is small than 800 than its center itself
         overflow: hidden
         border-radius: 5px
     p, ul, ol
         font-family: $font-stack-two
-        font-weight: 300
+        font-weight: 400
         color: $primary
-        line-height: 2em
+        line-height: 1.5em
         padding: 2em 0
+        @media screen and ( max-width: 600px )
+            font-size: 16px
     .dropCap::first-letter
-        font-size: 3.5em
+        font-size: 60px
         font-weight: 400
         font-family: $font-stack
         color: $highlight
+        @media screen and ( max-width: 600px )
+            font-size: 30px
     a
         color: $highlight
         font-weight: 600
@@ -68,6 +72,8 @@
         transition: all 0.3s ease-in-out
         &:hover
             color: $secondary
+        @media screen and ( max-width: 600px )
+            font-size: 15px
 h5.readMoreCTA
     text-align: center
     font-size: 1.2em

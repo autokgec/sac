@@ -71,6 +71,8 @@ html{
 
 /*************** Notice Box Ends ********************/
 
+/**************** Youtube player ********************/
+
 .youtube-player-wrapper{
     display: flex;
     justify-content: center;
@@ -81,6 +83,7 @@ html{
     width: 800px;
 }
 
+/**************** Youtube player Ends********************/
 
 
 @media only screen and (max-width: 600px) {

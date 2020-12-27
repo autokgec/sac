@@ -17,7 +17,7 @@ title: "Gallery"
   .column {
     float: left;
     width: 25%;
-    padding: 10px;
+    padding: 5px;
   }
   
   /* Style the images inside the grid */
@@ -38,9 +38,10 @@ title: "Gallery"
   }
   
   /* The expanding image container */
-  .container {
+  .gallery-img-container {
     position: relative;
     display: none;
+    width: 100%;
   }
   
   /* Expanding image text */
@@ -50,6 +51,7 @@ title: "Gallery"
     left: 45px;
     color: white;
     font-size: 40px;
+    text-shadow: 0 0 15px #000000;
   }
   
   /* Closable button inside the expanded image */
@@ -60,18 +62,19 @@ title: "Gallery"
     color: white;
     font-size: 50px;
     cursor: pointer;
+    text-shadow: 0 0 15px #000000;
   }
 
   @media only screen and (max-width:600px){
     #imgtext {
-    bottom: 10px;
-    left: 30px;
+    bottom: 7px;
+    left: 15px;
     font-size: 20px;
     }
 
     .closebtn {
-    top: 6px;
-    right: 30px;
+    top: 3px;
+    right: 16px;
     font-size: 30px;
   }
 
@@ -79,7 +82,6 @@ title: "Gallery"
   </style>
 </head>
 <body>
-  
   <div style="text-align:center">
     <p><strong>Click on the images below to zoom:</strong></p>
   </div>
@@ -100,7 +102,7 @@ title: "Gallery"
     </div>
   </div>
   
-  <div class="container">
+  <div class="gallery-img-container">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <img id="expandedImg" style="width:100%">
     <div id="imgtext"></div>
