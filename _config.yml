@@ -23,8 +23,8 @@ title: Students' Automobile Club, KGEC
 email: kgec.sac@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   SAC-KGEC is a automobile club of KGEC.
-baseurl: "/sac" # the subpath of your site, e.g. /blog
-url: "https://autokgec.github.io/sac" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sackgec.ml" # the base hostname & protocol for your site, e.g. http://example.com
 
 #we wont be needing them
 #twitter_username: jekyllrb
