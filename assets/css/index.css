@@ -11,9 +11,9 @@ html{
 
 /******************* Notice Box and Who Are We ********************/
 .float-container {
-    border: 3px solid #fff;
     padding: 30px;
     padding-bottom: 300px;
+    padding-top: 50px;
 }
 
 .who-are-we, .notice-box {
@@ -21,6 +21,7 @@ html{
     float: left;
     padding: 20px;
     padding-top: 70px;
+    padding-left: 100px;
 } 
 
 .who-are-we p{
@@ -28,7 +29,7 @@ html{
 } 
 
 .notice-box{
-    border: black solid 1px;
+    padding-left: 120px;
     border-radius: 5px;
     padding: 0;
 }
@@ -86,6 +87,7 @@ html{
     .who-are-we, .notice-box {
         width: 100%;
         padding: 12px;
+        padding-left: 0;
     } 
 
     .who-are-we h2{
@@ -104,6 +106,16 @@ html{
     .notice-box h3{
         font-size: 25px;
     } 
+
+    .notice-box{
+        padding-left: 0;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    .fb-page{
+        padding-left: 0;
+    }
 }
 
 /*************** Notice Box Ends ********************/
