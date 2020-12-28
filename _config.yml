@@ -38,9 +38,9 @@ url: "https://sackgec.ml" # the base hostname & protocol for your site, e.g. htt
 twitter_path: https://twitter.com/sac-kgec
 instagram_path: https://instagram.com/sac-kgec
 facebook_path: https://www.facebook.com/kgecSAC
-github_path: https://github.com/sac-kgec
+github_path: https://github.com/autokgec
 youtube_path: https://youtube.com/sac-kgec
-whatsapp_path: baseurl
+linkedin_path: https://linkedin.com/sac-kgec
 
 pathToBlogImgBin: /assets/img/blog/blogs/
 
