@@ -9,13 +9,28 @@ html{
     padding-top: 280px;
 }
 
-/******************* Notice Box ********************/
+/******************* Notice Box and Who Are We ********************/
+.float-container {
+    border: 3px solid #fff;
+    padding: 30px;
+    padding-bottom: 300px;
+}
 
-.notice-wrapper{
-    border: 2px solid #222;
-    margin-left:20%;
-    margin-right:20%;
-    border-radius: 7px;
+.who-are-we, .notice-box {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    padding-top: 70px;
+} 
+
+.who-are-we p{
+    font-weight: 500;
+} 
+
+.notice-box{
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 0;
 }
 
 .notice-container{
@@ -42,8 +57,8 @@ html{
 }
 
 .data-list {
-    height: 300px;
-    width: 700px;
+    height: 270px;
+    width: 500px;
     padding: 2rem;
     overflow-y: hidden;
     border-radius: 5px;
@@ -67,6 +82,28 @@ html{
     .data-list {
         height: 200px;
     }
+
+    .who-are-we, .notice-box {
+        width: 100%;
+        padding: 12px;
+    } 
+
+    .who-are-we h2{
+        font-size: 25px;
+    } 
+
+    .who-are-we p{
+        font-size: 16px;
+        line-height: 30px;
+    } 
+
+    .who-are-we{
+        padding-top: 0px;
+    } 
+
+    .notice-box h3{
+        font-size: 25px;
+    } 
 }
 
 /*************** Notice Box Ends ********************/

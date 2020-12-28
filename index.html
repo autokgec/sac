@@ -95,16 +95,36 @@ layout: default
   <!----------------------- Carousel Ends -------------------------->
 
   <!-- About-->
-  <div class="who-are-we" id="blurb">
-      <h2 style="text-align: center">Who are we?</h2>
-      <p> The Students' Automobile Club-KGEC, the official automobile club of KGEC is established to bridge the gap between the techincal knowledge and skills in the automobile fields among the engineering students.</a>
-      </p>
+
+  <div class="float-container">
+    <div class="who-are-we" id="blurb">
+        <h2 style="text-align: center">Who are we?</h2><br>
+        <p> The Students' Automobile Club-KGEC, the official automobile club of KGEC is established to bridge the gap between the techincal knowledge and skills in the automobile fields among the engineering students.</a>
+        </p>   
+    </div>
+    
+    <div class="notice-box">
+      <h3 style="text-align: center;padding-top: 10px;">Notice</h3>
+      <hr color="black">
+      <div class="notice-container">
+        <ul class="data-list" data-autoscroll>
+          <li>💡 Breaking Bad Episode 1</li>
+          <li>💡 Breaking Bad Episode 2</li>
+          <li>💡 Breaking Bad Episode 3</li>
+          <li>💡 Breaking Bad Episode 4</li>
+          <li>💡 Breaking Bad Episode 5</li>
+          <li>💡 Breaking Bad Episode 6</li>
+          <li>💡 Breaking Bad Episode 7</li>
+          <br><br>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <!-- About Ends -->
 
   <!-- Notice Box -->
-  <div class="notice-wrapper">
+  <!-- <div class="notice-wrapper">
     <h3 style="text-align: center;padding-top: 10px;">Notice</h3>
     <hr color="black">
     <div class="notice-container">
@@ -119,7 +139,7 @@ layout: default
         <br><br>
       </ul>
     </div>
-  </div>
+  </div> -->
 
   <!-- Notice Box Ends -->
 
@@ -134,7 +154,7 @@ layout: default
               <a href="{{ post.url }}" class="index-blog-img" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a> <!-- use a low res folder here-->
               <a href="" class="blogCategory">{{ post.categories }}</a>
               <a href="{{ post.url }}" class="indexBlogTitle">{{ post.title }}</a>
-              <p class="indexBlogExcerpt">{{ post.excerpt }}</p>
+              <p class="indexBlogExcerpt" style="font-weight: 500;">{{ post.excerpt }}</p>
           </div>
       {% endfor %}
     </div>
