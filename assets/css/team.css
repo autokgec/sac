@@ -168,3 +168,8 @@ body{background-color:#f1f1f2}
 }
 
 /*              Box 2 Ends            */
+
+.link-titles-wrapper h5{
+    font-size: 18px;
+    font-weight: 600;
+}

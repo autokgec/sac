@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- copied from post.html so post.sass is the file where u can change its styling-->
-<header class="blog-index-header-main" style="background-image: url('{{ site.baseurl }}/assets/img/favicon.png');">
+<header class="blog-index-header-main" style="background-image: url('{{ site.baseurl }}/assets/img/hero-image.png');">
     <div class="overlay-dark"></div>
     {% include nav.html %}
     <div class="blog-index-title">
@@ -13,17 +13,4 @@ layout: default
 
 <div class="blogPostContentWrapper">
     {{ content }}
-</div>
-
-
-<h5 class="readMoreCTA">You might want to read...</h5>
-<div class="blogReadMoreWrapper">
-    {% for post in site.posts limit: 3 %}
-        <div class="blogPostContainer">
-            <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a> <!-- use a low res folder here-->
-            <a href="" class="blogCategory">{{ post.categories }}</a>
-            <a href="{{ post.url }}" class="blogTitle">{{ post.title }}</a>
-            <p class="blogExcerpt" style="color: black">{{ post.excerpt }}</p>
-        </div>
-    {% endfor %}
 </div>

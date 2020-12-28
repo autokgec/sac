@@ -83,6 +83,12 @@ html{
     width: 800px;
 }
 
+.youtube-header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 /**************** Youtube player Ends********************/
 
 
@@ -107,6 +113,11 @@ html{
     .youtube-player{
         height: 165px;
         width: 330px;
+    }
+    .youtube-header{
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
     }
 
 }
