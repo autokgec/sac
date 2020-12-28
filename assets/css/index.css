@@ -29,8 +29,8 @@ html{
 } 
 
 .notice-box{
+    width: 30%;
     padding-left: 120px;
-    border-radius: 5px;
     padding: 0;
 }
 
@@ -64,6 +64,7 @@ html{
     overflow-y: hidden;
     border-radius: 5px;
 }
+
 
 @media only screen and (max-width: 600px) {
     .notice-container li {
@@ -109,13 +110,9 @@ html{
 
     .notice-box{
         padding-left: 0;
-        border-radius: 5px;
         padding: 0;
     }
 
-    .fb-page{
-        padding-left: 0;
-    }
 }
 
 /*************** Notice Box Ends ********************/
