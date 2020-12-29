@@ -17,19 +17,24 @@ html{
 }
 
 .who-are-we, .notice-box {
-    width: 50%;
     float: left;
-    padding: 20px;
+    padding: 30px;
     padding-top: 70px;
     padding-left: 100px;
 } 
+
+.who-are-we{
+    width: 55%;
+    padding-right: 30px;
+    margin-right: 120px;
+}
 
 .who-are-we p{
     font-weight: 500;
 } 
 
 .notice-box{
-    width: 30%;
+    width: 35%;
     padding-left: 120px;
     padding: 0;
 }
@@ -157,8 +162,8 @@ html{
 
 
     .youtube-player{
-        height: 165px;
-        width: 330px;
+        height: 220px;
+        width: 420px;
     }
     .youtube-header{
         text-align: center;
