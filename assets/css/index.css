@@ -32,7 +32,8 @@ html{
     padding: 0;
 }
 
-.notice-container{
+
+/* .notice-container{
     display: flex;
     justify-content: center;
 }
@@ -61,7 +62,7 @@ html{
     padding: 2rem;
     overflow-y: hidden;
     border-radius: 5px;
-}
+} */
 
 .fb-page{
     padding-left: 170px;

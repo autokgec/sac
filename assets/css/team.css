@@ -7,6 +7,7 @@ html{
 }
 .team-carousel-title{
     padding-top: 20px;
+    display: flex;
 }
 
 
@@ -19,7 +20,7 @@ html{
     margin-right: 100px;
 }
 
-div.member-pic{
+.member-pic{
     margin-top: 60px;
     margin-bottom: 40px;
     padding-right: 40px;
@@ -45,7 +46,65 @@ div.member-pic{
     margin-bottom: 40px;
 }
 
+.member-pic img{
+    width: 200px;
+    height: 200px;
+}
 
+@media only screen and (max-width: 600px) {
+
+    .carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body{
+        height:500px;
+    }
+
+    .member-pic img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .member-pic{
+        height: 10%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .member-about{
+        padding-right: 12%;
+        padding-left: 12%;
+        padding-top: 0;
+        margin: 0;
+        height: 30%;
+        width: 100%;
+    }
+
+    .team-carousel-title{
+        padding-top: 5px;
+        display: block;
+    }
+
+    .member-about p{
+        line-height: 24px;
+        padding-bottom: 0;
+        font-size: 12px;
+        padding-top: 3px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .member-about h3{
+        line-height: 25px;
+        padding-bottom: 3px;
+        font-size: 15px;
+        text-align: center;
+        margin:0;
+    }
+
+    p.position{
+        text-align: center;
+    }
+
+}
 
 
 
