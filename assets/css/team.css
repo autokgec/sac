@@ -26,7 +26,7 @@ html{
 }
 
 .member-pic{
-    margin-top: 60px;
+    margin-top: 12px;
     margin-bottom: 40px;
     padding-right: 40px;
     padding-left: 100px;
@@ -35,7 +35,19 @@ html{
 .member-about p{
     line-height: 30px;
     padding-bottom: 0;
-    font-size: 15px;
+    font-size: 18px;
+}
+
+.member-pic p{
+    line-height: 30px;
+    padding-bottom: 0;
+    font-size: 17px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.member-pic h3{
+    margin-top: 10px;
 }
 
 .view{
@@ -102,6 +114,23 @@ html{
     }
 
     .member-about h3{
+        line-height: 25px;
+        padding-bottom: 3px;
+        font-size: 15px;
+        text-align: center;
+        margin:0;
+    }
+
+    .member-pic p{
+        line-height: 24px;
+        padding-bottom: 0;
+        font-size: 12px;
+        padding-top: 3px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .member-pic h3{
         line-height: 25px;
         padding-bottom: 3px;
         font-size: 15px;
