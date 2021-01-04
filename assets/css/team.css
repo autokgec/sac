@@ -12,7 +12,7 @@ html{
 
 .internal-nav-links-wrapper h5{
     font-size: 20px;
-    font-weight: 510;
+    font-weight: 523;
 }
 
 
@@ -93,7 +93,7 @@ html{
     .member-about{
         padding-right: 12%;
         padding-left: 12%;
-        padding-top: 0;
+        padding-top: 5px;
         margin: 0;
         height: 30%;
         width: 100%;
@@ -107,33 +107,25 @@ html{
     .member-about p{
         line-height: 24px;
         padding-bottom: 0;
-        font-size: 12px;
+        font-size: 14px;
         padding-top: 3px;
         margin: 0;
         padding: 0;
     }
 
-    .member-about h3{
-        line-height: 25px;
-        padding-bottom: 3px;
-        font-size: 15px;
-        text-align: center;
-        margin:0;
-    }
-
     .member-pic p{
         line-height: 24px;
         padding-bottom: 0;
-        font-size: 12px;
+        font-size: 16px;
         padding-top: 3px;
         margin: 0;
         padding: 0;
     }
 
     .member-pic h3{
-        line-height: 25px;
+        line-height: 26px;
         padding-bottom: 3px;
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
         margin:0;
     }
