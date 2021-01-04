@@ -92,8 +92,8 @@ html{
 
     .member-about{
         z-index: 100000;
-        padding-right: 5%;
-        padding-left: 5%;
+        padding-right: 0;
+        padding-left: 0;
         padding-top: 5px;
         margin: 0;
         height: 30%;
