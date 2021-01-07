@@ -33,12 +33,14 @@ html{
 }
 
 .member-about p{
+    font-family: 'Kufam', cursive;
     line-height: 30px;
     padding-bottom: 0;
     font-size: 18px;
 }
 
 .member-pic p{
+    font-family: 'Kufam', cursive;
     line-height: 30px;
     padding-bottom: 0;
     font-size: 17px;
@@ -47,6 +49,7 @@ html{
 }
 
 .member-pic h3{
+    font-family: 'Kufam', cursive;
     margin-top: 10px;
 }
 
