@@ -7,6 +7,30 @@ title: Team
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/team.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .carousel-control-prev-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+      }
+      
+      .carousel-control-next-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+      }
+      .carousel-indicators li{
+           background-color: black;
+           border: black 1px solid;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .carousel-control-prev-icon {
+          display: none;
+        }
+      
+        .carousel-control-next-icon {
+          display: none;
+        }
+
+      }
+      </style>
 </head>
 <body>
 
