@@ -15,7 +15,7 @@ layout: default
 
 <div class="blogIndexWrapper">
     {% for post in site.posts %}
-        <div class="blogPostContainer">
+        <div class="blogPostContainer" data-aos="fade-up">
             <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a>
             <a href="" class="blogCategory">{{ post.categories }}</a>
             <a href="{{ post.url }}" class="blogTitle">{{ post.title }}</a>

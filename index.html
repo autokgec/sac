@@ -16,6 +16,7 @@ layout: default
       <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-1z" data-slide-to="1"></li>
       <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="3"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -52,7 +53,7 @@ layout: default
                   <strong>{{ site.title }}</strong>
                 </h1>
                 <h3>Design - Build - Test</h3>
-              </div>
+            </div>
             <!-- Content -->
           </div>
           <!-- Mask & flexbox options-->
@@ -63,6 +64,25 @@ layout: default
       <!--Third slide-->
       <div class="carousel-item">
         <div class="view" style="background-image: url('assets/img/lots of cars.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center carousel-title">
+            <!-- Content -->
+            <div class="home-title text-center" style="color: white; text-shadow: 0 0 15px #000000, 0 0 15px #000000;">
+              <h1>
+                <strong>{{ site.title }}</strong>
+              </h1>
+              <h3>Design - Build - Test</h3>
+            </div>
+            <!-- Content -->
+          </div>
+          <!-- Mask & flexbox options-->
+        </div>
+      </div>
+      <!--/Third slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('assets/img/f1-race.jpg'); background-repeat: no-repeat; background-size: cover;">
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center carousel-title">
             <!-- Content -->
@@ -100,13 +120,13 @@ layout: default
   <!-- About-->
 
   <div class="float-container">
-    <div class="who-are-we" id="blurb">
+    <div class="who-are-we" id="blurb" data-aos="fade-right">
         <h2 style="text-align: center">Who are we?</h2><br>
         <p> The Students' Automobile Club-KGEC, the official automobile club of KGEC is established to bridge the gap between the techincal knowledge and skills in the automobile fields among the engineering students.</a>
         </p>   
     </div>
     
-    <div class="notice-box">
+    <div class="notice-box" data-aos="fade-left">
       <div class="fb-page" data-href="https://www.facebook.com/kgecSAC/" data-tabs="timeline" data-width="400px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kgecSAC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kgecSAC/">Students&#039; Automobile Club-KGEC</a></blockquote></div>
     </div>
   </div>
@@ -132,11 +152,11 @@ layout: default
   <br>
 
   <!-- Recent Blogs -->
-  <h2 class="recent-blogs"> Most Recent Blog </h2>
+  <h2 class="recent-blogs" data-aos="fade-up"> Most Recent Blog </h2>
   <div class="recent-blogs-content-wrapper">
     <div class="blogReadMoreWrapper">
       {% for post in site.posts limit: 1 %}
-          <div class="index-blog">
+          <div class="index-blog" data-aos="fade-up">
               <a href="{{ post.url }}" class="index-blog-img" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></a> <!-- use a low res folder here-->
               <a href="" class="blogCategory">{{ post.categories }}</a>
               <a href="{{ post.url }}" class="indexBlogTitle">{{ post.title }}</a>
@@ -145,8 +165,8 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <p class="youtube-header">Inauguration Event of SAC, KGEC</p>
-  <div class="youtube-player-wrapper">
+  <p class="youtube-header" data-aos="fade-up">Inauguration Event of SAC, KGEC</p>
+  <div class="youtube-player-wrapper" data-aos="fade-up">
     <iframe class="youtube-player" src="https://www.youtube.com/embed/0jXWLDPYNTg"></iframe>
   </div>
 
