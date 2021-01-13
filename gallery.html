@@ -3,119 +3,248 @@ layout: page
 title: "Gallery"
 ---
 <head>
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  /* The grid: Four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 5px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container */
-  .gallery-img-container {
-    position: relative;
-    display: none;
-    width: 100%;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 45px;
-    color: white;
-    font-size: 40px;
-    text-shadow: 0 0 15px #000000;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-    position: absolute;
-    top: 12px;
-    right: 45px;
-    color: white;
-    font-size: 50px;
-    cursor: pointer;
-    text-shadow: 0 0 15px #000000;
-  }
+	<style type="text/css">
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			outline: none;
+			box-sizing: border-box;
+		}
 
-  @media only screen and (max-width:600px){
-    #imgtext {
-    bottom: 7px;
-    left: 15px;
-    font-size: 20px;
+		.gallery-container {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+			margin: 0;
+			max-width: 700px;
+			max-height: 780px;
+			background-color: white;
+      box-shadow: 1px 1px 10px black;
+      padding-bottom: 10px;
+		}
+
+
+		/* Useful Classes */
+		.xy-center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.transition {
+			transition: all 350ms ease-in-out;
+		}
+
+		.r-3-2 {
+			width: 100%;
+			padding-bottom: 66.667%;
+			background-color: #ddd;
+		}
+
+		.image-holder {
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		/* Main Styles */
+		.gallery-wrapper {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.gallery {
+			position: relative;
+			white-space: nowrap;
+			font-size: 0;
+		}
+
+		.gallery-item-wrapper {
+			cursor: pointer;
+			width: 26%; /* arbitrary value */
+			display: inline-block;
+			background-color: white;
+		}
+
+		.gallery-item { opacity: 0.5; }
+		.gallery-item.active { opacity: 1; }
+
+		.controls {
+			font-size: 25px;
+			border-top: none;
+		}
+		.move-btn {
+			display: inline-block;
+			width: 48%;
+			border: none;
+		  color: #ccc;
+			background-color: transparent;
+		}
+		.move-btn:first-child {border-right: none;}
+		.move-btn.left  { cursor: w-resize; }
+		.move-btn.right { cursor: e-resize; }
+
+    div.blogPostContentWrapper{
+      padding-left: 50px;
     }
 
-    .closebtn {
-    top: 3px;
-    right: 16px;
-    font-size: 30px;
-  }
-
-  }
-  </style>
+    @media only screen and (max-width: 600px) {
+      div.blogPostContentWrapper{
+        padding-left: 15px;
+    }
+    }
+	</style>
 </head>
 <body>
-  <div style="text-align:center">
-    <p><strong>Click on the images below to zoom:</strong></p>
-  </div>
-  
-  <!-- The four columns -->
-  <div class="row">
-    <div class="column">
-      <img src="{{ site.baseurl }}\assets\img\f1-race.jpg" alt="Formula 1" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="{{ site.baseurl }}\assets\img\f1.jpg" alt="Ferrari" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="{{ site.baseurl }}\assets\img\lots of cars.jpg" alt="Formula 1" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="{{ site.baseurl }}\assets\img\ferrari.jpg" alt="Ferrari" style="width:100%" onclick="myFunction(this);">
-    </div>
-  </div>
-  
-  <div class="gallery-img-container">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <img id="expandedImg" style="width:100%">
-    <div id="imgtext"></div>
-  </div>
-  
-  <script>
-  function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-  }
-  </script>
-  
+	<div class="gallery-container">
+	
+		<div class="feature" style="box-shadow: 1px 1px 5px black;">
+      <figure class="featured-item image-holder r-3-2 transition" style="height: 200px;"></figure>
+		</div>
+		
+		<div class="gallery-wrapper">
+			<div class="gallery">
+					<div class="gallery-item-wrapper">
+						<figure class="gallery-item image-holder r-3-2 active transition"></figure>
+					</div>
+					<div class="gallery-item-wrapper">
+						<figure class="gallery-item image-holder r-3-2 transition"></figure>
+					</div>
+					<div class="gallery-item-wrapper">
+						<figure class="gallery-item image-holder r-3-2 transition"></figure>
+					</div>
+					<div class="gallery-item-wrapper">
+						<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="gallery-item-wrapper">
+						<figure class="gallery-item image-holder r-3-2 transition"></figure>
+					</div>
+			</div>
+		</div>
+		
+		<div class="controls">
+			<button class="move-btn left" style="color: black;">&larr;</button>
+			<button class="move-btn right" style="color: black;">&rarr;</button>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		var gallery = document.querySelector('.gallery');
+    var galleryItems = document.querySelectorAll('.gallery-item');
+    var numOfItems = gallery.children.length;
+    var itemWidth = 26; // percent: as set in css
+
+    var featured = document.querySelector('.featured-item');
+
+    var rightBtn = document.querySelector('.move-btn.left');
+    var leftBtn = document.querySelector('.move-btn.right');
+    var leftInterval;
+    var rightInterval;
+
+    var scrollRate = 0.2;
+    var left;
+
+    function selectItem(e) {
+      if (e.target.classList.contains('active')) return;
+      
+      featured.style.backgroundImage = e.target.style.backgroundImage;
+      
+      for (var i = 0; i < galleryItems.length; i++) {
+        if (galleryItems[i].classList.contains('active'))
+          galleryItems[i].classList.remove('active');
+      }
+      
+      e.target.classList.add('active');
+    }
+
+    function galleryWrapLeft() {
+      var first = gallery.children[0];
+      gallery.removeChild(first);
+      gallery.style.left = -itemWidth + '%';
+      gallery.appendChild(first);
+      gallery.style.left = '0%';
+    }
+
+    function galleryWrapRight() {
+      var last = gallery.children[gallery.children.length - 1];
+      gallery.removeChild(last);
+      gallery.insertBefore(last, gallery.children[0]);
+      gallery.style.left = '-2%';
+    }
+
+    function moveLeft() {
+      left = left || 0;
+
+      leftInterval = setInterval(function() {
+        gallery.style.left = left + '%';
+
+        if (left > -itemWidth) {
+          left -= scrollRate;
+        } else {
+          left = 0;
+          galleryWrapLeft();
+        }
+      }, 1);
+    }
+
+    function moveRight() {
+      //Make sure there is element to the leftd
+      if (left > -itemWidth && left < 0) {
+        left = left  - itemWidth;
+        
+        var last = gallery.children[gallery.children.length - 1];
+        gallery.removeChild(last);
+        gallery.style.left = left + '%';
+        gallery.insertBefore(last, gallery.children[0]);	
+      }
+      
+      left = left || 0;
+
+      leftInterval = setInterval(function() {
+        gallery.style.left = left + '%';
+
+        if (left < 0) {
+          left += scrollRate;
+        } else {
+          left = -itemWidth;
+          galleryWrapRight();
+        }
+      }, 1);
+    }
+
+    function stopMovement() {
+      clearInterval(leftInterval);
+      clearInterval(rightInterval);
+    }
+
+    leftBtn.addEventListener('mouseenter', moveLeft);
+    leftBtn.addEventListener('mouseleave', stopMovement);
+    rightBtn.addEventListener('mouseenter', moveRight);
+    rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+    //Start this baby up
+    (function init() {
+      var images = [
+        '{{ site.baseurl }}/assets/img/f1-race.jpg',
+        '{{ site.baseurl }}/assets/img/f1.jpg',
+        '{{ site.baseurl }}/assets/img/ferrari.jpg',
+        '{{ site.baseurl }}/assets/img/f1.jpg',
+        '{{ site.baseurl }}/assets/img/hero-image.png',
+      ];
+      
+      //Set Initial Featured Image
+      featured.style.backgroundImage = 'url(' + images[0] + ')';
+      
+      //Set Images for Gallery and Add Event Listeners
+      for (var i = 0; i < galleryItems.length; i++) {
+        galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+        galleryItems[i].addEventListener('click', selectItem);
+      }
+    })();
+	</script>
 </body>
