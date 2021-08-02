@@ -22,7 +22,7 @@
 title: Students' Automobile Club, KGEC
 email: kgec.sac@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  SAC-KGEC is a automobile club of KGEC.
+  SAC-KGEC is an automobile club of KGEC.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sackgec.ml" # the base hostname & protocol for your site, e.g. http://example.com
 
